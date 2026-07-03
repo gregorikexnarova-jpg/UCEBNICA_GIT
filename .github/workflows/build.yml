@@ -12,9 +12,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Typst
-        uses: typst/action-setup@v3
+        uses: typst-community/setup-typst@v4
         with:
-          version: 0.11.x
+          typst-version: 0.11.x
 
       - name: Compile PDF
         run: typst compile main.typ ucebnica_informatiky.pdf
